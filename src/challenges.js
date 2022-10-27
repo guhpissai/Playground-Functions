@@ -1,18 +1,40 @@
 // Desafio 1
-function compareTrue() {
-  // Comecando o projeto!
+const brazilHexa = true;
+const italyPenta = false;
+const argentinaBi = true;
+
+function compareTrue(bol1, bol2) {  
+  if (bol1 === false && bol2 === true) {
+    return false;
+  } else if (bol1 === true && bol2 === false) {
+    return false;
+  } else if (bol1 === false && bol2 === false) {
+    return false;
+  } else if (bol1 === true && bol2 === true) {
+    return true;
+  }
 }
+// compareTrue(argentinaBi, brazilHexa);
+
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  const result = (base * height) / 2;
+  console.log(result);
+  return result;
 }
-
+// calcArea(10, 50);
+// calcArea(5, 2);
+// calcArea(51, 1);
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(text) {
+  const frase = text;
+  const arrayFrase = frase.split(' ')
+  return arrayFrase;
 }
-
+console.log(splitSentence('Go Tryber'));
+console.log(splitSentence('vamo que vamo'));
+console.log(splitSentence('foguete'));
 // Desafio 4
 function concatName() {
   // seu código aqui
