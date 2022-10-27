@@ -48,9 +48,16 @@ concatName(['captain', 'my', 'captain']);
 
 
 // Desafio 5
-function footballPoints() {
-
+function footballPoints(wins, ties) {
+  const numberOfWins = wins * 3;
+  const numberOfTies = ties * 1;
+  const total = numberOfWins + numberOfTies;
+  console.log(total);
+  return total;
 }
+footballPoints(14, 8);
+footballPoints(1, 2);
+footballPoints(0, 0);
 
 // Desafio 6
 function highestCount() {
