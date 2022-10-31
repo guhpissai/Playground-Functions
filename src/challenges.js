@@ -60,9 +60,18 @@ footballPoints(1, 2);
 footballPoints(0, 0);
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let soma = 0;
+  let higherNumber = Math.max.apply(null,array);
+  for (index = 0; index < array.length; index += 1) {
+    if (array[index] === higherNumber) {
+      soma += 1;
+    }
+  }
+  console.log(soma);
+  return soma;
 }
+ highestCount([9, 1, 2, 3, 9, 5, 7]);
 
 // Desafio 7
 function catAndMouse() {
