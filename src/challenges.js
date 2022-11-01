@@ -114,17 +114,46 @@ function encode(string) {
   for (let index = 0; index < string.length; index += 1) {
       if (string[index] === "a") {
       decodificate.push("1");
+    } else if (string[index] === "e") {
+      decodificate.push("2");
+    } else if (string[index] === "i") {
+      decodificate.push("3");
+    } else if (string[index] === "o") {
+      decodificate.push("4");
+    } else if (string[index] === "u") {
+      decodificate.push("5");
     } else {
       decodificate.push(string[index]);
     }
   }
-console.log(decodificate.join(' '));
+  decodificate = decodificate.join('');
+  console.log(decodificate)
+  return decodificate;
 }
-encode("amar como a beleza");
+encode("hello");
 
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let decodificateAgain = [];
+  for (let index = 0; index < string.length; index += 1) {
+      if (string[index] === "1") {
+      decodificateAgain.push("a");
+    } else if (string[index] === "2") {
+      decodificateAgain.push("e");
+    } else if (string[index] === "3") {
+      decodificateAgain.push("i");
+    } else if (string[index] === "4") {
+      decodificateAgain.push("o");
+    } else if (string[index] === "5") {
+      decodificateAgain.push("u");
+    } else {
+      decodificateAgain.push(string[index]);
+    }
+  }
+  decodificateAgain = decodificateAgain.join('');
+  console.log(decodificateAgain)
+  return decodificateAgain;
 }
+decode("h2ll4");
 
 // Desafio 10
 function techList() {
