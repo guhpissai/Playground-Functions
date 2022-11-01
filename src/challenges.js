@@ -156,9 +156,21 @@ function decode(string) {
 decode("h2ll4");
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+let techs = [ 
+]
+function techList(array, string) {
+  let arrayOrd = array.sort();
+  for (let index in arrayOrd) {
+    {
+    techs["tech"] = (arrayOrd[index]);
+    techs["name"] = string;
+    }
+  console.log(techs);
+  return techs
 }
+}
+techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], "gustavo");
+ 
 
 module.exports = {
   calcArea,
