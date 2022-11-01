@@ -35,6 +35,7 @@ function splitSentence(text) {
 console.log(splitSentence('Go Tryber'));
 console.log(splitSentence('vamo que vamo'));
 console.log(splitSentence('foguete'));
+
 // Desafio 4
 function concatName(array) {
   const textArray = array;
@@ -76,17 +77,17 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let result = '';
-  if (mouse - cat2 === 2 && mouse - cat1 === 3) {
-    result = 'cat2';
-  } else if (mouse - cat1 === 6 && mouse - cat2 === 12) {
-    result = 'cat1';
-  } else if (cat1 && cat2 === mouse ) {
+  if (cat1 + mouse === cat2 - mouse) {
     result = 'os gatos trombam e o rato foge';
+  } else if (mouse - cat1 > mouse - cat2) {
+    result = 'cat1';
+  } else if (mouse - cat2 > mouse - cat1) {
+    result = 'cat2';
   }
   console.log(result);
   return result;
 }
-catAndMouse(10, 7, 8);
+catAndMouse(10, 7, 7);
 
 // Desafio 8
 function fizzBuzz(array) {
@@ -157,21 +158,20 @@ decode("h2ll4");
 
 // Desafio 10
 let techs = [ 
+{
+  tech: "",
+  nome: ""
+},
 ]
 function techList(array, string) {
-  let arrayOrd = array.sort();
-  for (let index in arrayOrd) {
-    {
-    techs["tech"] = (arrayOrd[index]);
-    techs["name"] = string;
-    }
+  for (let index in array) {
+    techs[0] = (array[index]);
+    techs[1] = string;
   console.log(techs);
-  return techs
 }
 }
 techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], "gustavo");
  
-
 module.exports = {
   calcArea,
   catAndMouse,
