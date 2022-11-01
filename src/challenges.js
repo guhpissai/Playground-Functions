@@ -109,9 +109,19 @@ function fizzBuzz(array) {
 fizzBuzz([7, 9]);
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let decodificate = [];
+  for (let index = 0; index < string.length; index += 1) {
+      if (string[index] === "a") {
+      decodificate.push("1");
+    } else {
+      decodificate.push(string[index]);
+    }
+  }
+console.log(decodificate.join(' '));
 }
+encode("amar como a beleza");
+
 function decode() {
   // seu código aqui
 }
