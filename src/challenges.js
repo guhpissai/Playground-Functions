@@ -154,20 +154,24 @@ function decode(string) {
 decode('h2ll4');
 
 // Desafio 10
-let techs;
 function techList(array, string) {
-  let arrayOrd = array.sort();
-  for (let index in arrayOrd) {
-    techs = [
-      {
-        tech: '',
-        nome: '',
-      },
-    ];
-    techs[0] = (arrayOrd[index]);
-    techs[1] = string;
+  let result;
+  let technologys = [];
+  if (array.length === 0) {
+    result = 'Vazio!';
+  } else {
+    array.sort();
+    result = technologys;
   }
-  console.log(techs);
+  for (let index in array) {
+    tech = {
+      tech: (array[index]),
+      name: string,
+    };
+    technologys.push(tech);
+  }
+  console.log(result);
+  return result;
 }
 techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'gustavo');
 
