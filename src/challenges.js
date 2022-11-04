@@ -126,8 +126,7 @@ function encode(string) {
       decodificate.push(string[index]);
     }
   }
-  decodificate = decodificate.join('');
-  return decodificate;
+  return decodificate.join('');
 }
 encode('hello');
 
@@ -163,8 +162,8 @@ function techList(array, string) {
     array.sort();
     result = technologys;
   }
-  for (let index in array) {
-    tech = {
+  for (let index = 0; index < array.length; index += 1) {
+    let tech = {
       tech: (array[index]),
       name: string,
     };
