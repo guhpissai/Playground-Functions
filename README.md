@@ -1,7 +1,7 @@
 # Project Playground Functions
 
 # Contexto
-Este projeto é um portfólio desenvolvido com o objetivo de demonstrar informações sobre mim, o que eu aprendi durante os primeiros blocos da Trybe e o que eu desejo aprender no futuro.
+Neste projeto o desafio foi implementar todas as funções seguindo os requisitos propostos. Usei 100% JavaScript para todas as tarefas.
 
 ## Técnologias usadas
 
