@@ -1,4 +1,4 @@
-# Project Lessons Learned
+# Project Playground Functions
 
 # Contexto
 Este projeto é um portfólio desenvolvido com o objetivo de demonstrar informações sobre mim, o que eu aprendi durante os primeiros blocos da Trybe e o que eu desejo aprender no futuro.
